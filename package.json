@@ -1,4 +1,8 @@
 {
+  "name": "node-gsdata-sdk",
+  "version": "1.0.0",
+  "description": "gsdata SDK (http://www.gsdata.cn)",
+  "main": "index.js",
   "scripts": {
     "test": "mocha --require should --check-leaks ./test/test.js"
   },
