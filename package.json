@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "test": "mocha --require should --check-leaks ./test/test.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-urllib": "^0.2.3",
+    "fast-stable-stringify": "^0.1.1",
+    "js-base64": "^2.1.9",
+    "md5": "^2.1.0",
+    "urllib": "^2.8.0"
+  },
+  "devDependencies": {
+    "co-mocha": "^1.1.2",
+    "mocha": "^2.4.5",
+    "should": "^8.2.2"
+  }
+}
