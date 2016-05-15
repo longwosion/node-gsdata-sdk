@@ -22,19 +22,19 @@ describe('Gsdata', function() {
   });
 
   it('GET sys_user_info', function* () {
-    this.timeout(5000);
+    this.timeout(10000);
     var data = yield client.getSysUserInfo('longwosion@gmail.com');
     data.returnCode.should.be.eql('1001')
   });
 
   it('GET sys_check_user', function* () {
-    this.timeout(5000);
+    this.timeout(10000);
     var data = yield client.getSysCheckUser('longwosion@gmail.com');
     data.returnCode.should.be.eql('1001')
   });
 
   it('GET wx_content', function* () {
-    this.timeout(5000);
+    this.timeout(10000);
     var api = '/api/wx/wxapi/wx_content';
     var params = {'url':'http://mp.weixin.qq.com/s?__biz=MzAxOTEyMDI1MQ==&mid=400950548&idx=3&sn=cca852f541f93c53633a4e0069230313&3rd=MzA3MDU4NTYzMw==&scene=6#rd'}
     var data = yield client.callApi(api, params)
